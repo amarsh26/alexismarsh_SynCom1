@@ -11,16 +11,30 @@
     },
     "parameters": [ 
         {
-            "id": "parameter_1",
-            "optional": true,
+            "id": "metagenome_input_annotated",
+            "optional": false,
             "advanced": false,
             "allow_multiple": false,
             "default_values": [ "" ],
             "field_type": "text",
             "text_options": {
-                "valid_ws_types": [ ]
+                "valid_ws_types": ["KBaseGenomes.MetagenomeAnnotation" ]
             }
-        }
+        },
+	
+	{
+	     "id": "max_number",
+	     "optional": false,
+	     "advanced": false,
+	     "allow_multiple": false,
+	     "default_values": [""],
+	     "field_type": "text",
+	     "Text_options": {
+		     "validate_as": "int",
+		     "min_integer": 1
+	     }
+	}
+
     ],
     "behavior": {
         "service-mapping": {
