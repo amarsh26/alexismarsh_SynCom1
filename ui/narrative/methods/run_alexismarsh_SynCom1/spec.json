@@ -23,6 +23,19 @@
         },
 	
 	{
+	    "id": "genomeset_input",
+	    "optional" : false, 
+	    "advanced" : false,
+	    "allow_multiple" : false, 
+	    "default_values" : [""],
+	    "field_type": "text",
+	    "text_options": {
+		    "valid_ws_types": ["KBaseSets.GenomeSet"]
+	    }
+	},    
+
+
+	{
 	     "id": "max_number",
 	     "optional": false,
 	     "advanced": false,
@@ -49,9 +62,16 @@
                     "narrative_system_variable": "workspace_id",
                     "target_property": "workspace_id"
                 },{
-                    "input_parameter": "parameter_1",
-                    "target_property": "parameter_1"
-                }
+                    "input_parameter": "metagenome_input_annotated",
+                    "target_property": "metagenome_input_annotated"
+                },{
+		     "input_parameter": "genomeset_input",
+		     "target_property": "genomeset_input"
+		},{
+                     "input_parameter": "max_number",
+		     "target_property": "max_number"
+
+		}
             ],
             "output_mapping": [
                 {

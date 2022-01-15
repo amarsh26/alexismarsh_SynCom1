@@ -38,8 +38,8 @@ parameters :
         short-hint : |
             Genome set from whcih genomes will be selected from for the SynCom
 
-     max_number :
-         uni-name : |
+    max_number :
+         ui-name : |
               Max number of genomes 
 
          short-hint : |
